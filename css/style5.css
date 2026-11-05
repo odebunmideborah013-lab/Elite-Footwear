@@ -1,0 +1,327 @@
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #0B1F3A;
+    --white: #FFFFFF;
+    --light-grey: #F4F6F8;
+    --text: #222B38;
+}
+
+body {
+    padding: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* the heading */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    color: #0B1F3A;
+}
+
+.top-bar {
+    background: #0B1F3A;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.header-main {
+    /* min-height: 20px;
+    padding: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #eee;
+}
+
+.logo img {
+    display: block;
+    width: 150px;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+
+
+.header-icons a,
+.menu-toggle {
+    color: #0B1F3A;
+    font-size: 25px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 18px 10px;
+}
+
+.navbar a {
+    color: #0B1F3A;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: #64748B;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header-main {
+        padding: 15px 5%;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .navbar {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+}
+
+
+.checkout-page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 5%;
+  color: #0B1F3A;
+}
+
+.checkout-page > h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 10px;
+}
+
+.checkout-page > p {
+  color: #667085;
+  margin-bottom: 35px;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 40px;
+  align-items: start;
+}
+
+#checkout-form,
+.checkout-summary {
+  padding: 28px;
+  border: 1px solid #E5E7EB;
+}
+
+#checkout-form h2,
+.checkout-summary h2 {
+  margin: 0 0 25px;
+}
+
+#checkout-form label {
+  display: block;
+  margin: 18px 0 8px;
+  font-weight: 600;
+}
+
+#checkout-form input,
+#checkout-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #D0D5DD;
+  border-radius: 2px;
+  font: inherit;
+}
+
+#checkout-form input:focus,
+#checkout-form textarea:focus {
+  outline: 2px solid #0B1F3A;
+  outline-offset: 2px;
+}
+
+.checkout-submit {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  border: none;
+  background: #0B1F3A;
+  color: #FFFFFF;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checkout-summary {
+  background: #F4F6F8;
+}
+
+.checkout-summary p {
+  line-height: 1.7;
+}
+
+.checkout-note {
+  font-size: 0.9rem;
+  color: #667085;
+}
+
+@media (max-width: 768px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  #checkout-form,
+  .checkout-summary {
+    padding: 20px;
+  }
+}
+
+
+/* footer */
+
+.site-footer {
+    background: whitesmoke;
+    color: black;
+    padding: 55px 8% 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 35px;
+}
+
+.footer-brand img {
+    width: 150px;
+    max-height: 65px;
+    object-fit: contain;
+    background: #fff;
+}
+
+.footer-brand p {
+    color: black;
+    max-width: 300px;
+    line-height: 1.8;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    margin: 0 0 8px;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #40516A;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #40516A;
+    padding-top: 18px;
+    text-align: center;
+    color: #40516A;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+/* FLOATING WHATSAPP BUTTON */
+.whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 9999;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-float svg {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+}
+
+.whatsapp-float:focus-visible {
+    outline: 3px solid #0B1F3A;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .whatsapp-float {
+        right: 16px;
+        bottom: 16px;
+        width: 54px;
+        height: 54px;
+    }
+}
+
+
+/* html,
+body {
+    overflow-x: hidden;
+} */

@@ -1,0 +1,364 @@
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #0B1F3A;
+    --white: #FFFFFF;
+    --light-grey: #F4F6F8;
+    --text: #222B38;
+}
+
+body {
+    padding: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* the heading */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    color: #0B1F3A;
+}
+
+.top-bar {
+    background: #0B1F3A;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.header-main {
+    /* min-height: 20px;
+    padding: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #eee;
+}
+
+.logo img {
+    display: block;
+    width: 150px;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+
+/* .cart-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.cart-count {
+  position: absolute;
+  top: -9px;
+  right: -10px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 3px;
+  border-radius: 50%;
+  background: #0B1F3A;
+  color: #FFFFFF;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+.header-icons a,
+.menu-toggle {
+    color: #0B1F3A;
+    font-size: 25px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 18px 10px;
+}
+
+.navbar a {
+    color: #0B1F3A;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: #64748B;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header-main {
+        padding: 15px 5%;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .navbar {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+}
+
+/* cart */
+.cart-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 55px 5%;
+  color: #0B1F3A;
+}
+
+.cart-page h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 10px;
+}
+
+.cart-subtitle {
+  color: #667085;
+  margin-bottom: 35px;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 22px;
+  align-items: center;
+  padding: 22px 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.cart-item img {
+  width: 120px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #F4F6F8;
+}
+
+.cart-item h3 {
+  margin: 0 0 10px;
+}
+
+.cart-item p {
+  margin: 6px 0;
+  color: #667085;
+}
+
+.cart-item input {
+  width: 65px;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.remove-item {
+  display: block;
+  margin-top: 12px;
+  border: none;
+  background: none;
+  color: #A12626;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.cart-summary {
+  max-width: 400px;
+  margin: 35px 0 25px auto;
+  padding: 25px;
+  background: #F4F6F8;
+}
+
+.cart-action {
+  width: 100%;
+  padding: 13px;
+  margin-top: 12px;
+  border: 1px solid #0B1F3A;
+  background: #0B1F3A;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-action a {
+    text-decoration: none;
+    color: white;
+}
+
+#clear-cart {
+  background: white;
+  color: #0B1F3A;
+}
+
+.continue-shopping {
+  color: #0B1F3A;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .cart-item {
+    grid-template-columns: 85px 1fr;
+    gap: 14px;
+  }
+
+  .cart-item img {
+    width: 85px;
+  }
+
+  .cart-item .item-price {
+    grid-column: 2;
+  }
+
+  .cart-summary {
+    max-width: none;
+  }
+}
+
+
+/* footer */
+
+.site-footer {
+    background: whitesmoke;
+    color: black;
+    padding: 55px 8% 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 35px;
+}
+
+.footer-brand img {
+    width: 150px;
+    max-height: 65px;
+    object-fit: contain;
+    background: #fff;
+}
+
+.footer-brand p {
+    color: black;
+    max-width: 300px;
+    line-height: 1.8;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    margin: 0 0 8px;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #40516A;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #40516A;
+    padding-top: 18px;
+    text-align: center;
+    color: #40516A;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+/* FLOATING WHATSAPP BUTTON */
+.whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 9999;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-float svg {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+}
+
+.whatsapp-float:focus-visible {
+    outline: 3px solid #0B1F3A;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .whatsapp-float {
+        right: 16px;
+        bottom: 16px;
+        width: 54px;
+        height: 54px;
+    }
+}
+
+
+/* html,
+body {
+    overflow-x: hidden;
+} */
