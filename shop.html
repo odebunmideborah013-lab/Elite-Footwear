@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop||Elite Footwear</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="top-bar">
+            FREE DELIVERY ON SELECT ORDERS · SHOP THE COLLECTION
+        </div>
+
+        <div class="header-main">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="Elite Footwear logo">
+            </a>
+
+            <div class="header-icons">
+                <a href="shop.html" aria-label="Search">⌕</a>
+
+                 <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <circle cx="9" cy="21" r="1" />
+                        <circle cx="20" cy="21" r="1" />
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                    </svg>
+                    <span id="cart-count" class="cart-count">0</span>
+                </a>
+
+                <button class="menu-toggle" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="shop.html#categories">Categories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <main class="shop-page">
+        <section class="shop-intro">
+            <p class="eyebrow">THE ELITE COLLECTION</p>
+            <h1>SHOP ALL FOOTWEAR</h1>
+            <p>Discover your next favourite pair.</p>
+        </section>
+
+        <section class="shop-products" id="categories">
+            <div class="shop-toolbar">
+                <p>Explore our collection</p>
+
+                <label for="category-filter">Filter:</label>
+                <select id="category-filter">
+                    <option value="all">All Footwear</option>
+                    <option value="loafers">Loafers</option>
+                    <option value="slides">Slides</option>
+                    <option value="sandals">Sandals</option>
+                    <option value="brogue">Brogue</option>
+                    <option value="Derbis">Derbis</option>
+                    <option value="women">Women</option>
+                </select>
+            </div>
+
+            <div class="shop-grid">
+                <article class="shop-card" data-category="loafers" data-featured="true">
+                    <img src="images/loafers.jpeg" alt="Monarch Two-Tone Loafers">
+                    <div class="shop-card-info">
+                        <h2>Monarch Two-Tone Loafers</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=monarch" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="slides" data-featured="true">
+                    <img src="images/slip.jpeg" alt="Cognac Luxe Slides">
+                    <div class="shop-card-info">
+                        <h2>Cognac Luxe Slides</h2>
+                        <p>₦15,000</p>
+                        <a href="product.html?id=cognac" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="slides" data-featured="false">
+                    <img src="images/slide11.jpg" alt="Transparent Leopard Print Slide Sandals">
+                    <div class="shop-card-info">
+                        <h2>Transparent Leopard Print Slide Sandals</h2>
+                        <p>₦18,500</p>
+                        <a href="product.html?id=slide11" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="true">
+                    <img src="images/sandal9.jpeg" alt="Mason Slingback Sandal">
+                    <div class="shop-card-info">
+                        <h2>Mason Slingback Sandal</h2>
+                        <p>₦20,000</p>
+                        <a href="product.html?id=comfort" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="brogue" data-featured="true">
+                    <img src="images/brogue.jpg" alt="Brown Brogue">
+                    <div class="shop-card-info">
+                        <h2>Brown Brogue</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=brogue1" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="slides" data-featured="false">
+                    <img src="images/slide8.jpg" alt="Dolce & Gabbana Bianca Interlock Slide">
+                    <div class="shop-card-info">
+                        <h2>Dolce & Gabbana Bianca Interlock Slide</h2>
+                        <p>₦15,000</p>
+                        <a href="product.html?id=slide8" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="slides" data-featured="false">
+                    <img src="images/slide.jpeg" alt="Onyx Buckle Slides">
+                    <div class="shop-card-info">
+                        <h2>Onyx Buckle Slides</h2>
+                        <p>₦15,000</p>
+                        <a href="product.html?id=onyx" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="brogue" data-featured="false">
+                    <img src="images/brogue8.jpg" alt="Men's two-tone leather Oxford dress shoes">
+                    <div class="shop-card-info">
+                        <h2>Men's two-tone leather Oxford dress shoes</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=brogue8" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="slides" data-featured="false">
+                    <img src="images/slide9.jpg" alt="Project Cloud Jannel Flat Summer slide">
+                    <div class="shop-card-info">
+                        <h2> Project Cloud Jannel Flat Summer slide</h2>
+                        <p>₦15,000</p>
+                        <a href="product.html?id=slide9" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="Derbis" data-featured="true">
+                    <img src="images/derbis3.jpeg" alt="Wingtip Derby Shoe">
+                    <div class="shop-card-info">
+                        <h2>Wingtip Derby Shoe</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=derbis3" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="true">
+                    <img src="images/sandals3.jpg" alt="Comfort Strap Sandals">
+                    <div class="shop-card-info">
+                        <h2>Comfort Cross-Strap Sandals</h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=sandals3" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="brogue" data-featured="true">
+                    <img src="images/brogue2.jpeg" alt="Black Adelaide Oxford ">
+                    <div class="shop-card-info">
+                        <h2> Black Adelaide Oxford </h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=brogues2" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="true">
+                    <img src="images/guci.webp" alt="Heritage Pattern Sandals">
+                    <div class="shop-card-info">
+                        <h2>Heritage Pattern Sandals</h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=heritage" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="Derbis" data-featured="true">
+                    <img src="images/derbis2.jpeg" alt="Chunky Derby Shoe">
+                    <div class="shop-card-info">
+                        <h2>Chunky Derby Shoe </h2>
+                        <p>₦50,000</p>
+                        <a href="product.html?id=derbis2" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="true">
+                    <img src="images/sandal4.jpg" alt="Comfort Strap Sandals">
+                    <div class="shop-card-info">
+                        <h2>Comfort Cross-Strap Sandals</h2>
+                        <p>₦20,000</p>
+                        <a href="product.html?id=sandals4" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="Derbis" data-featured="true">
+                    <img src="images/derbis4.webp" alt="Regular Fit Black Derby Shoes">
+                    <div class="shop-card-info">
+                        <h2>Regular Fit Black Derby Shoes</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=derbis4" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="slides" data-featured="true">
+                    <img src="images/slide6.jpg" alt="Luxury Men's Cross-Strap Slide Sandals">
+                    <div class="shop-card-info">
+                        <h2>Luxury Men's Cross-Strap Slide Sandals</h2>
+                        <p>₦20,000</p>
+                        <a href="product.html?id=slide6" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="Derbis" data-featured="true">
+                    <img src="images/derbis5.jpg" alt="Men's Dark Green Patent Leather Chunky Derby Shoe">
+                    <div class="shop-card-info">
+                        <h2>Men's Dark Green Patent Leather Chunky Derby Shoe</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=derbis5" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="brogue" data-featured="true">
+                    <img src="images/brogue5.jpg" alt="Men's two-tone brogue oxford dress shoe">
+                    <div class="shop-card-info">
+                        <h2> Men's two-tone brogue oxford dress shoe</h2>
+                        <p>₦50,000</p>
+                        <a href="product.html?id=brogues5" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="loafers" data-featured="true">
+                    <img src="images/loafers4.jpg" alt="Black suede horsebit loafer">
+                    <div class="shop-card-info">
+                        <h2>Black suede horsebit loafer </h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=loafers4" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="brogue" data-featured="true">
+                    <img src="images/brogue12.jpg" alt="Wing Tail Brogue">
+                    <div class="shop-card-info">
+                        <h2>Wing Tail Brogue</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=brogue2" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="Derbis" data-featured="true">
+                    <img src="images/derbis6.jpg" alt="Classic Derby Shoes">
+                    <div class="shop-card-info">
+                        <h2> Classic Derby Shoes</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=derbis6" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="loafers" data-featured="true">
+                    <img src="images/loafers5.jpg" alt="Black patent leather monk strap loafer">
+                    <div class="shop-card-info">
+                        <h2> Black patent leather monk strap loafer</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=loafers5" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="Derbis" data-featured="false">
+                    <img src="images/derbis7.jpg" alt="Split-Toe Derby ">
+                    <div class="shop-card-info">
+                        <h2>Split-Toe Derby </h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=derbis7" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="brogue" data-featured="true">
+                    <img src="images/borgue6,jpg.webp" alt="Black wingtip brogue dress shoe">
+                    <div class="shop-card-info">
+                        <h2>Black wingtip brogue dress shoe</h2>
+                        <p>₦50,000</p>
+                        <a href="product.html?id=brogues6" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="Derbis" data-featured="false">
+                    <img src="images/derbis8.jpg" alt="Sleeve Leather Derby Shoe">
+                    <div class="shop-card-info">
+                        <h2>Sleeve Leather Derby Shoe</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=derbis8" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="slides" data-featured="true">
+                    <img src="images/slide5.jpg" alt="Women's Flat Buckle Open-Toe Slide Sandals">
+                    <div class="shop-card-info">
+                        <h2>Women's Flat Buckle Open-Toe Slide Sandals</h2>
+                        <p>₦20,000</p>
+                        <a href="product.html?id=slide5" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="Derbis" data-featured="false">
+                    <img src="images/derbis9.jpg" alt="black leather plain-toe Derby shoe">
+                    <div class="shop-card-info">
+                        <h2>black leather plain-toe Derby shoe</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=derbis9" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="loafers" data-featured="false">
+                    <img src="images/loafers9.jpg" alt="Classic black leather penny loafer">
+                    <div class="shop-card-info">
+                        <h2>Classic black leather penny loafer</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=loafers9" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="brogue" data-featured="true">
+                    <img src="images/brogue7.jpg" alt="Single monk strap shoe">
+                    <div class="shop-card-info">
+                        <h2> Single monk strap shoe </h2>
+                        <p>₦50,000</p>
+                        <a href="product.html?id=brogue7" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="loafers" data-featured="false">
+                    <img src="images/loafers10.jpg" alt="Gupper East Black and White Leather Loafers">
+                    <div class="shop-card-info">
+                        <h2>Gupper East Black and White Leather Loafers </h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=loafers10" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="loafers" data-featured="true">
+                    <img src="images/loafers8.jpg" alt="chunky patent leather tassel loafers">
+                    <div class="shop-card-info">
+                        <h2>chunky patent leather tassel loafers </h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=loafers8" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="Derbis" data-featured="false">
+                    <img src="images/derbis10.jpg" alt="Bordeaux Chunky derby">
+                    <div class="shop-card-info">
+                        <h2>Bordeaux Chunky derby</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=derbis10" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="loafers" data-featured="false">
+                    <img src="images/loafers3.jpg" alt="Taupe Patent Loafers">
+                    <div class="shop-card-info">
+                        <h2>Taupe Patent Loafers</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=loafers3" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="brogue" data-featured="false">
+                    <img src="images/brogue9.jpg" alt="Cheaney Arthur III Oxford Brogue.">
+                    <div class="shop-card-info">
+                        <h2>Cheaney Arthur III Oxford Brogue.</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=brogue9" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="loafers" data-featured="false">
+                    <img src="images/loafers11.jpg" alt="Oliveria Lan Elegant Black Patent Leather Loafer">
+                    <div class="shop-card-info">
+                        <h2>Oliveria Lan Elegant Black Patent Leather Loafer</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=loafers11" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="brogue" data-featured="false">
+                    <img src="images/brogue10.jpg" alt="Simons Leather Brogue Shoe">
+                    <div class="shop-card-info">
+                        <h2>Simons Leather Brogue Shoe </h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=brogue10" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="true">
+                    <img src="images/stripe.jpg" alt="Elite Stripe Thong Sandals">
+                    <div class="shop-card-info">
+                        <h2>Elite Stripe Thong Sandals</h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=stripe" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="slides" data-featured="true">
+                    <img src="images/slide1.jpg" alt="Luxury Buckle Slides">
+                    <div class="shop-card-info">
+                        <h2>Luxury Buckle Slides</h2>
+                        <p>₦20,000</p>
+                        <a href="product.html?id=luxury" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="loafers" data-featured="true">
+                    <img src="images/loafers2.jpg" alt="Platform chain loafers">
+                    <div class="shop-card-info">
+                        <h2>Platform chain loafers </h2>
+                        <p>₦50,000</p>
+                        <a href="product.html?id=loafers2" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="brogue" data-featured="false">
+                    <img src="images/brogue11.jpg" alt="Two-tone chunky wingtip oxford shoes">
+                    <div class="shop-card-info">
+                        <h2>Two-tone chunky wingtip oxford shoes</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=brogue11" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="slides" data-featured="true">
+                    <img src="images/slide2.jpg" alt="H-Shaped Slides">
+                    <div class="shop-card-info">
+                        <h2>H-Shaped Slides</h2>
+                        <p>₦20,000</p>
+                        <a href="product.html?id=hslide" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="slides" data-featured="false">
+                    <img src="images/cross.jpeg" alt="Urban Comfort Cross-Strap">
+                    <div class="shop-card-info">
+                        <h2>Urban Comfort Cross-Strap </h2>
+                        <p>₦35,000</p>
+                        <a href="product.html?id=urban" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="slides" data-featured="false">
+                    <img src="images/slide3.jpg" alt=" Square-Toe Thong Sandal">
+                    <div class="shop-card-info">
+                        <h2> Square-Toe Thong Sandal </h2>
+                        <p>₦20,000</p>
+                        <a href="product.html?id=slide3" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="loafers" data-featured="true">
+                    <img src="images/loafers1.jpg" alt="Black patent platform loafers">
+                    <div class="shop-card-info">
+                        <h2>Black patent platform loafers</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=loafers1" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="loafers" data-featured="false">
+                    <img src="images/loafers12.jpeg" alt="Two-Tone Chunky Tassel Loafers">
+                    <div class="shop-card-info">
+                        <h2>Two-Tone Chunky Tassel Loafers </h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=loafers12" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="Derbis" data-featured="true">
+                    <img src="images/derbis1.jpeg" alt="Men's wholecut oxford dress shoe">
+                    <div class="shop-card-info">
+                        <h2>Men's wholecut oxford dress shoe</h2>
+                        <p>₦45,000</p>
+                        <a href="product.html?id=derbis1" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+
+                <article class="shop-card" data-category="slides" data-featured="true">
+                    <img src="images/slide4.jpg" alt="Black and white slide sandals">
+                    <div class="shop-card-info">
+                        <h2> Black and white slide sandals </h2>
+                        <p>₦14,000</p>
+                        <a href="product.html?id=slide4" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="slides" data-featured="false">
+                    <img src="images/slide7.jpg" alt=" Hermès Chypre Sandal">
+                    <div class="shop-card-info">
+                        <h2> Hermès Chypre Sandal</h2>
+                        <p>₦35,000</p>
+                        <a href="product.html?id=slide7" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="false">
+                    <img src="images/sandal5.jpg" alt="Black Smart Leather Sandals">
+                    <div class="shop-card-info">
+                        <h2> Black Smart Leather Sandals </h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=sandal5" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="false">
+                    <img src="images/sandal6.jpg" alt="Reformation Ludo Toe Ring Strappy Flat Sandal">
+                    <div class="shop-card-info">
+                        <h2>Reformation Ludo Toe Ring Strappy Flat Sandal </h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=sandal6" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="false">
+                    <img src="images/sandal7.jpg" alt="BW- Classy Brown White Male Palm Slippers">
+                    <div class="shop-card-info">
+                        <h2>BW- Classy Brown White Male Palm Slippers </h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=sandal7" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="false">
+                    <img src="images/sandal8.jpg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Men's leather slide sandals </h2>
+                        <p>₦35,000</p>
+                        <a href="product.html?id=sandal8" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="false">
+                    <img src="images/sandal10.jpeg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Medusa Logo Clip Sandals</h2>
+                        <p>₦35,000</p>
+                        <a href="product.html?id=sandal10" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="false">
+                    <img src="images/sandal11.jpeg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>brown leather double-strap sandals </h2>
+                        <p>₦35,000</p>
+                        <a href="product.html?id=sandal11" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="false">
+                    <img src="images/sandal12.jpeg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Italian Fabi Sandal </h2>
+                        <p>₦35,000</p>
+                        <a href="product.html?id=sandal12" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="false">
+                    <img src="images/sandal13.jpeg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Glossy Double Strap Sandals</h2>
+                        <p>₦35,000</p>
+                        <a href="product.html?id=sandal13" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="false">
+                    <img src="images/sandal14.jpeg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Touch Strap Chunky Sandals</h2>
+                        <p>₦35,000</p>
+                        <a href="product.html?id=sandal14" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="false">
+                    <img src="images/sandal15.jpeg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Men's leather smart sandals</h2>
+                        <p>₦35,000</p>
+                        <a href="product.html?id=sandal15" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="false">
+                    <img src="images/sandal16.jpeg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2> Boston flame-patterned clogs</h2>
+                        <p>₦35,000</p>
+                        <a href="product.html?id=sandal16" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="sandals" data-featured="false">
+                    <img src="images/sandal17.jpeg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>BrikenStock Arizona Sandal</h2>
+                        <p>₦35,000</p>
+                        <a href="product.html?id=sandal17" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="women" data-featured="false">
+                    <img src="images/women1.jpeg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Bow slide </h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=women1" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="women" data-featured="false">
+                    <img src="images/women2.jpeg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2> H-band slide (Women) </h2>
+                        <p>₦15,000</p>
+                        <a href="product.html?id=women2" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="women" data-featured="true">
+                    <img src="images/women3.jpg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2> H-band slide (Women)</h2>
+                        <p>₦15,000</p>
+                        <a href="product.html?id=women3" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="women" data-featured="false">
+                    <img src="images/women4.jpg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Leather & transparent single strap slide </h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=women4" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="women" data-featured="false">
+                    <img src="images/women5.jpg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Quilted Women's Sandal</h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=women5" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="women" data-featured="false">
+                    <img src="images/women6.jpg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Quilted Women's Sandal</h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=women6" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="women" data-featured="false">
+                    <img src="images/women7.jpg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Strappy Block Heel Mule</h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=women7" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="women" data-featured="false">
+                    <img src="images/women8.jpg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Strappy Block Heel Mule</h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=women8" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="women" data-featured="false">
+                    <img src="images/women12.jpg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Strappy Block Heel Mule</h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=women12" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="women" data-featured="false">
+                    <img src="images/women9.jpg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Thin Strap CrissCross Slide</h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=women9" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="women" data-featured="false">
+                    <img src="images/women10.jpg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Thin Strap CrissCross Slide</h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=women10" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+
+                <article class="shop-card" data-category="women" data-featured="false">
+                    <img src="images/women11.jpg" alt="Men's leather slide sandals">
+                    <div class="shop-card-info">
+                        <h2>Women's Woven Rope Sandal</h2>
+                        <p>₦25,000</p>
+                        <a href="product.html?id=women11" class="shop-product-btn">View Product</a>
+                    </div>
+                </article>
+        </section>
+
+        <section class="subscribe">
+            <div class="subscribe-text">
+                <h2>We are going places. Join us.</h2>
+                <p>First looks at new drops, stories from the workshop, and the kind of updates that <br>actually mean
+                    something.</p>
+            </div>
+
+            <iframe width="540" height="305" src="https://69be47c5.sibforms.com/v2/serve/MUIFAH_2FpSdvkjNvGE-BQQcmue7VfhFWtmOQRJwdgSLXMnrKftql2scMkBqMHMqAkXVwr2LJSZ-my42GpLYbZQRF5vaJCwehHcgLEIrSPl6QSC7z549tFJH0hZz8SZ991U6I2x2AH7Tbn7hJKovPvVbeQATxp7gHrINM5R-CztvFW_fObBpiF-ZGA7ctJyaJYQlSvZ5TjtZjxI3Wg==" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+            <p class="spam">No spam. Unsubscribe whenever you want.</p>
+       <p id="subscribe-status" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/logo.jpeg" alt="Elite Footwear logo">
+                <p>Step into your style. Discover footwear
+                    for every occasion.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="shop.html#category-filter">Categories</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <!-- Add the client's confirmed contact details here -->
+                <a href="contact.html">Get in touch</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Elite Footwear. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <!-- Floating WhatsApp Button -->
+<a
+    href="https://wa.me/+2349136032720?text=Hello%20Elite%20Footwear%2C%20I%20have%20an%20enquiry."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with Elite Footwear on WhatsApp"
+>
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path fill="currentColor" d="M16 3a12.5 12.5 0 0 0-10.7 19L3.5 29l7.3-1.9A12.5 12.5 0 1 0 16 3zm0 22.8c-2 0-3.9-.5-5.5-1.6l-.4-.2-4.3 1.1 1.2-4.2-.3-.4A10.1 10.1 0 1 1 16 25.8zm5.6-7.5c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6-.1-.2-.7-1.6-1-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.6s1.2 3 1.4 3.2c.2.2 2.3 3.5 5.6 4.9.8.4 1.4.6 1.9.7.8.2 1.5.2 2 .1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.6-.3z"/>
+    </svg>
+</a>
+</body>
+
+</html>
