@@ -801,15 +801,13 @@ if (checkoutItems && checkoutTotal) {
   }
 }
 
-
-
-// CHECKOUT TO WHATSAPP
+// CHECKOUT TO WHATSAPP + EMAIL BACKEND
 
 const checkoutForm = document.getElementById("checkout-form");
 const checkoutMessage = document.getElementById("checkout-message");
 
 if (checkoutForm && checkoutMessage) {
-  checkoutForm.addEventListener("submit", function (event) {
+  checkoutForm.addEventListener("submit", async function (event) {
     event.preventDefault();
 
     if (!checkoutForm.checkValidity()) {
@@ -863,9 +861,112 @@ Please confirm my order. Thank you!`;
     const whatsappURL =
       `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
+    const workerURL =
+      "https://elite-footwear-orders.odebunmioluwasegun17.workers.dev";
+
+    checkoutMessage.textContent = "Submitting your order...";
+
+    try {
+      const response = await fetch(workerURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          type: "order",
+          name,
+          email,
+          phone,
+          address,
+          city,
+          cart
+        })
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Order email failed.");
+      }
+
+      checkoutMessage.textContent =
+        "Order details submitted! Opening WhatsApp to complete your order.";
+
+    } catch (error) {
+      console.error("Email backend error:", error);
+
+      checkoutMessage.textContent =
+        "Email submission could not be confirmed. WhatsApp will still open.";
+    }
+
     window.location.href = whatsappURL;
   });
 }
+
+
+// // CHECKOUT TO WHATSAPP
+
+// const checkoutForm = document.getElementById("checkout-form");
+// const checkoutMessage = document.getElementById("checkout-message");
+
+// if (checkoutForm && checkoutMessage) {
+//   checkoutForm.addEventListener("submit", function (event) {
+//     event.preventDefault();
+
+//     if (!checkoutForm.checkValidity()) {
+//       checkoutForm.reportValidity();
+//       return;
+//     }
+
+//     const cart = JSON.parse(localStorage.getItem("eliteCart")) || [];
+
+//     if (cart.length === 0) {
+//       checkoutMessage.textContent = "Your cart is empty.";
+//       return;
+//     }
+
+//     const name = document.getElementById("customer-name").value.trim();
+//     const email = document.getElementById("customer-email").value.trim();
+//     const phone = document.getElementById("customer-phone").value.trim();
+//     const address = document.getElementById("customer-address").value.trim();
+//     const city = document.getElementById("customer-city").value.trim();
+
+//     let total = 0;
+
+//     const orderDetails = cart.map(item => {
+//       const itemTotal = Number(item.price) * Number(item.quantity);
+//       total += itemTotal;
+
+//       return `${item.name}
+// Size: ${item.size}
+// Colour: ${item.colour}
+// Quantity: ${item.quantity}
+// Price: ₦${itemTotal.toLocaleString("en-NG")}`;
+//     }).join("\n\n");
+
+//     const message = `Hello Elite Footwear, I would like to place an order.
+
+// CUSTOMER DETAILS
+// Name: ${name}
+// Email: ${email}
+// Phone: ${phone}
+// Delivery address: ${address}
+// City: ${city}
+
+// ORDER DETAILS
+// ${orderDetails}
+
+// TOTAL: ₦${total.toLocaleString("en-NG")}
+
+// Please confirm my order. Thank you!`;
+
+//     const whatsappNumber = "2349136032720";
+//     const whatsappURL =
+//       `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+//     window.location.href = whatsappURL;
+//   });
+// }
 
 // CONTACT FORM - WHATSAPP
 
