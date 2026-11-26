@@ -1,1 +1,16 @@
+JSON
 
+{
+   monarch: {
+    name: "Monarch Two-Tone Loafers",
+    price: 45000,
+    image: "images/loafers.jpeg",
+    description: "Two-tone footwear for a smart, polished look."
+  },
+
+   brogue1: {
+    name: "Brown Brogue",
+    price: 45000,
+    image: "images/brogue.jpg",
+    description: "Refined leather shoes featuring distinctive decorative perforations and classic detailing. An excellent choice for formal events, office wear, and smart-casual outfits."
+  },
